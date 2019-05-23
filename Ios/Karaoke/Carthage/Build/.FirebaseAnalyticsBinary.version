@@ -1,0 +1,50 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "5.15.0",
+  "iOS" : [
+    {
+      "name" : "Firebase",
+      "hash" : "a8669248da9519e9955e00448e518e1ca6becb32689eedddde237e19ad1136ae"
+    },
+    {
+      "name" : "nanopb",
+      "hash" : "68adc40df29a0bc673e8238496d000f0172889d21fbb826237e2d36113c5d9db"
+    },
+    {
+      "name" : "FirebaseAnalytics",
+      "hash" : "206c58e8b2142a83a3b80d7f36c891e206923bb99372d20547ce4879b2591212"
+    },
+    {
+      "name" : "FIRAnalyticsConnector",
+      "hash" : "ddd6337f15c36e9eec6ade1b5190eb1d5f594c70ac8c12c56a3f70493dc5d66a"
+    },
+    {
+      "name" : "FirebaseCore",
+      "hash" : "4527f01badeae2a3f5f36375de031d3ecc38fc82d43f570b3d569c7c08a21668"
+    },
+    {
+      "name" : "GoogleUtilities",
+      "hash" : "dc561be125dcf60e32cd032674dfafa328249b9480941a4467e25bf09d9b0e2d"
+    },
+    {
+      "name" : "FirebaseCoreDiagnostics",
+      "hash" : "544443bcaffb3659fd7fb8edec42f3d3f9a7b508d3aae696a97869cd97691e8d"
+    },
+    {
+      "name" : "FirebaseInstanceID",
+      "hash" : "17b3952e7e7c832f39370cb3a26a7ce71dbc364a05222b8870b1de79642dd254"
+    },
+    {
+      "name" : "GoogleAppMeasurement",
+      "hash" : "ac85036f08f1bc91ec3e41266b8e4660ac50b5e7e9e948f94f6f44f7292adc0a"
+    }
+  ]
+}

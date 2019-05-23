@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FqE-1r-dIj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nav Home View Controller-->
+        <scene sceneID="ce0-WR-lpI">
+            <objects>
+                <navigationController id="FqE-1r-dIj" customClass="NavHomeViewController" customModule="MyKaraoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="js8-Ci-mvc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="playerView" destination="bqc-gm-IaJ" id="3rO-SA-kQ2"/>
+                        <outlet property="searchView" destination="Tao-rr-mtV" id="5Lr-sK-egB"/>
+                        <segue destination="ovI-ha-6wo" kind="relationship" relationship="rootViewController" id="AVh-ij-vON"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bg-Wp-OFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="bqc-gm-IaJ" customClass="PlayerView" customModule="MyKaraoke" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1t-nl-s5a">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="K1t-nl-s5a" secondAttribute="height" multiplier="16:9" id="BXe-dd-8ui"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="3hC-sE-G0o" appends="YES" id="bdN-wD-5vt"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.32352789032396745" green="0.61693025960487802" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="frk-q0-CyZ" firstAttribute="top" secondItem="K1t-nl-s5a" secondAttribute="top" constant="20" id="YGh-TM-efZ"/>
+                        <constraint firstItem="K1t-nl-s5a" firstAttribute="centerX" secondItem="frk-q0-CyZ" secondAttribute="centerX" id="d9c-bL-3zH"/>
+                        <constraint firstItem="K1t-nl-s5a" firstAttribute="width" secondItem="bqc-gm-IaJ" secondAttribute="width" id="mKq-fo-j1f"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="frk-q0-CyZ"/>
+                    <connections>
+                        <outlet property="player" destination="K1t-nl-s5a" id="yBv-XC-Lmx"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="Tao-rr-mtV" customClass="SearchView" customModule="MyKaraoke" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="ibe-8O-MIs"/>
+                </view>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3hC-sE-G0o">
+                    <connections>
+                        <action selector="minimizeGesture:" destination="bqc-gm-IaJ" id="HMa-xA-IlQ"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-2054" y="231"/>
+        </scene>
+        <!--Home Table View Controller-->
+        <scene sceneID="2Of-MH-TlK">
+            <objects>
+                <tableViewController id="ovI-ha-6wo" customClass="HomeTableViewController" customModule="MyKaraoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oei-rY-9Zu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NlE-mx-EXV">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NlE-mx-EXV" id="Zpy-eb-P43">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ovI-ha-6wo" id="g78-xh-fkc"/>
+                            <outlet property="delegate" destination="ovI-ha-6wo" id="s3a-cZ-4zX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="dM3-vT-4Xi"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1HS-z8-Zcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-961" y="231"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyKaraoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="54"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="cp2-L6-3tT">
+            <objects>
+                <viewController storyboardIdentifier="search" id="lfW-rB-wVy" customClass="SearchViewController" customModule="MyKaraoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="py0-tp-dte">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wR3-Vf-nOi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwp-ec-9mo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="36"/>
+        </scene>
+        <!--result-->
+        <scene sceneID="Mkj-1q-Ij4">
+            <objects>
+                <viewController storyboardIdentifier="result" title="result" id="1u4-qA-hQB" customClass="ResultViewController" customModule="MyKaraoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vbK-Ly-POt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DUh-bM-YpM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e8k-u1-qqc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="266-dN-BZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200" y="96"/>
+        </scene>
+        <!--Play Video View Controller-->
+        <scene sceneID="2Eh-hQ-nUg">
+            <objects>
+                <viewController storyboardIdentifier="play" id="WgY-Xf-qZc" customClass="PlayVideoViewController" customModule="MyKaraoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Eb-L5-Yta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EcW-I9-VmB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ict-C4-smW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2883" y="67"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aCx-Kp-V0x">
+            <objects>
+                <viewController id="zqw-ec-SkD" customClass="TViewController" customModule="MyKaraoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zs7-gb-Tm9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0O0-13-fFt">
+                                <rect key="frame" x="0.0" y="58" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yzJ-pY-Uxc"/>
+                    </view>
+                    <connections>
+                        <outlet property="wk" destination="0O0-13-fFt" id="02A-KL-mcp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDl-9x-1aD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3628" y="66.11694152923539"/>
+        </scene>
+    </scenes>
+</document>

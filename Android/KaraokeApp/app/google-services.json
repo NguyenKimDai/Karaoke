@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "1006248249179",
+    "firebase_url": "https://cuonghxproject.firebaseio.com",
+    "project_id": "cuonghxproject",
+    "storage_bucket": "cuonghxproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006248249179:android:4ba82479ee5387e3",
+        "android_client_info": {
+          "package_name": "com.example.cuonghx.cuonghxproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006248249179-g86usgo7qjooe193k1g2qo5lcr9lef38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cuonghx.cuonghxproject",
+            "certificate_hash": "dd2dc1edefbf33f151c7dd173c0b573527ea3058"
+          }
+        },
+        {
+          "client_id": "1006248249179-dbse2f6u2cpdl1d9a4bv9pefqnc2khpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDXbOx-N3nFuUs1pnIaiLzo1m0cPEcPBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006248249179-dbse2f6u2cpdl1d9a4bv9pefqnc2khpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1006248249179-lemn87223nb1k44p9jsdm1mu9hcpbulf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cuonghx2709.YoutubeApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006248249179:android:7560f1fc3965cd36",
+        "android_client_info": {
+          "package_name": "com.example.cuonghx.cuonghxprojectclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006248249179-udvqot2t6mv6lcb6in275h76jg15635e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cuonghx.cuonghxprojectclient",
+            "certificate_hash": "dd2dc1edefbf33f151c7dd173c0b573527ea3058"
+          }
+        },
+        {
+          "client_id": "1006248249179-dbse2f6u2cpdl1d9a4bv9pefqnc2khpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDXbOx-N3nFuUs1pnIaiLzo1m0cPEcPBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006248249179-dbse2f6u2cpdl1d9a4bv9pefqnc2khpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1006248249179-lemn87223nb1k44p9jsdm1mu9hcpbulf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cuonghx2709.YoutubeApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006248249179:android:c0dd658cb694d216",
+        "android_client_info": {
+          "package_name": "com.team7.karaokeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006248249179-h1jvlg0paovhc3gk6et2s41onu19vo2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.team7.karaokeapp",
+            "certificate_hash": "5deebcd15197fc4facb923e7df838fbf6475aeb9"
+          }
+        },
+        {
+          "client_id": "1006248249179-dbse2f6u2cpdl1d9a4bv9pefqnc2khpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDXbOx-N3nFuUs1pnIaiLzo1m0cPEcPBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006248249179-dbse2f6u2cpdl1d9a4bv9pefqnc2khpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1006248249179-lemn87223nb1k44p9jsdm1mu9hcpbulf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cuonghx2709.YoutubeApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006248249179:android:31a230377994545d",
+        "android_client_info": {
+          "package_name": "com.team7.kararokeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006248249179-d5r041lqgst8qf9j6f7alee6o4ckpg56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.team7.kararokeapp",
+            "certificate_hash": "5deebcd15197fc4facb923e7df838fbf6475aeb9"
+          }
+        },
+        {
+          "client_id": "1006248249179-dbse2f6u2cpdl1d9a4bv9pefqnc2khpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDXbOx-N3nFuUs1pnIaiLzo1m0cPEcPBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006248249179-dbse2f6u2cpdl1d9a4bv9pefqnc2khpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1006248249179-lemn87223nb1k44p9jsdm1mu9hcpbulf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cuonghx2709.YoutubeApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
